@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&family=Poor+Story&display=swap');
+
+#body {
+    font-family: 'Poor Story', cursive;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Chakra Petch', sans-serif;
+    color: black;
+    font-size: 60px;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    background: transparent;
+    border-style: groove;
+    border-color: white;
+    color: white;
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#mensajes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    width: 100px;
+    height: 15px;
+}
+
+.subtitulo  {
+    margin-top: 40px;
+    color: orange;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.ataques  {
+    
+    background-color: wheat;
+    border-radius: 20px;
+    
+}
+
+.panel-tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 760px;
+    height: 280px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.subpanel-tarjetas{
+    display: flex;
+
+}
+
+.tarjeta-de-mokepon {
+    width: 260px;
+    height: 120px;
+    background: orange;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    border-width:4px;
+    border-style:double;
+    border-color:white;
+    width:50%;
+    margin-bottom: 50px;
+}
+
+.tarjeta-de-mokepon img{
+    width: 66px;
+}
+.tarjeta-de-mokepon p {
+    font-size: 20px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background: greenyellow;
+
+}
+
+#boton-mascota {
+    width: 150px;
+    height: 30px;
+    background: orange;
+    border-radius: 5px;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+#label-seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 760px;
+    height: 330px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.boton-ataque {
+    width: 160px;
+    height: 200px;
+
+}
+
+#boton-fuego {
+    background-image:url('./img/fuego.jpg');
+    background-size: 200px;
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 130px;
+    height: 200px;
+}
+
+
+#boton-agua {
+    background-image:url('./img/agua.jpg');
+    background-size: 150px;
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 130px;
+    height: 200px;
+}
+
+
+#boton-tierra {
+    background-image:url('./img/tierra.jpg');
+    background-size: 140px;
+    background-position: center;
+    background-repeat:no-repeat;
+    width: 130px;
+    height: 200px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 3px 0;
+}
+
+@media (max-width: 360px) {
+
+    .subpanel-tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #ver-mapa div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+}
